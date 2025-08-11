@@ -1,4 +1,51 @@
-# Gemini CLI
+# Gemini CLI Eval
+魔改版gemini，专门用于做metric eval
+
+## 安装
+### 在🍎macOS上安装
+在终端中运行：
+```
+git clone https://github.com/fulingyue/gemini-cli-eval.git
+cd gemini-cli-eval
+npm install && npm run build
+echo "alias gemini-eval='node $PWD/scripts/start.js'" >> ~/.zshrc
+source ~/.zshrc
+```
+如果你仍在使用 Bash，请将 `~/.zshrc` 替换为 `~/.bash_profile`
+
+重启终端，就可以在任何路径下通过输入gemini-eval来运行这个项目了。
+
+### 在Windows上安装
+1. 运行
+```
+git clone https://github.com/fulingyue/gemini-cli-eval.git
+cd gemini-cli-eval
+npm install
+npm run build
+```
+2. 在你的项目文件夹里，创建一个名为 gemini-eval.cmd 的新文件。文件内容如下。
+```
+@echo off
+node "C:\path\to\your\gemini-cli-eval\scripts\start.js" %*
+```
+> 注意： 你需要手动将 C:\path\to\your\gemini-cli-eval 替换成你项目所在的 完整绝对路径。
+
+3. 将文件夹添加到系统 PATH:
+  
+  * 在 Windows 搜索栏中搜索 “编辑系统环境变量” 并打开它。
+  * 在弹出的窗口中，点击 “环境变量...” 按钮。
+  * 在 “用户变量” 或 “系统变量” 区域中，找到并选中 Path 变量，然后点击 “编辑...”。
+  * 点击 “新建”，然后输入你刚刚创建的文件夹的路径 (例如 C:\Users\YourUsername\bin)。
+  * 一路点击“确定”保存更改。
+
+4. 移动批处理文件:
+    将第二步创建的 gemini-eval.cmd 文件移动到刚刚添加到 PATH 的文件夹中 (例如
+  C:\Users\YourUsername\bin)。
+
+5. 重启所有的窗口，重新打开命令行即可执行gemini-eval命令。
+
+
+
 
 [![Gemini CLI CI](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/google-gemini/gemini-cli/actions/workflows/ci.yml)
 [![Version](https://img.shields.io/npm/v/@google/gemini-cli)](https://www.npmjs.com/package/@google/gemini-cli)
