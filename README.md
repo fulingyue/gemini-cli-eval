@@ -1,5 +1,5 @@
 # Gemini CLI Eval
-魔改版gemini，专门用于做metric eval
+魔改版gemini，专门用于做metric eval，运行命令和gemini区分开，用gemini-eval打开该项目。
 
 ## 安装
 ### 在🍎macOS上安装
@@ -13,7 +13,7 @@ source ~/.zshrc
 ```
 如果你仍在使用 Bash，请将 `~/.zshrc` 替换为 `~/.bash_profile`
 
-重启终端，就可以在任何路径下通过输入gemini-eval来运行这个项目了。
+重启终端，就可以在任何路径下通过输入`gemini-eval`来运行这个项目了。
 
 ### 在Windows上安装
 1. 运行
@@ -42,7 +42,7 @@ node "C:\path\to\your\gemini-cli-eval\scripts\start.js" %*
     将第二步创建的 gemini-eval.cmd 文件移动到刚刚添加到 PATH 的文件夹中 (例如
   C:\Users\YourUsername\bin)。
 
-5. 重启所有的窗口，重新打开命令行即可执行gemini-eval命令。
+5. 重启所有的窗口，重新打开命令行即可执行`gemini-eval`命令。
 
 
 
