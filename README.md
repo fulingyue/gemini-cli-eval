@@ -23,19 +23,19 @@ cd gemini-cli-eval
 npm install
 npm run build
 ```
-2. 在你的项目文件夹里，创建一个名为 gemini-eval.cmd 的新文件。文件内容如下。
+2. 在gemini-cli-eval文件夹里，创建一个名为 gemini-eval.cmd 的新文件。文件内容如下。
 ```
 @echo off
 node "C:\path\to\your\gemini-cli-eval\scripts\start.js" %*
 ```
-> 注意： 你需要手动将 C:\path\to\your\gemini-cli-eval 替换成你项目所在的 完整绝对路径。
+> 注意： 你需要手动将 C:\path\to\your\gemini-cli-eval 替换成**gemini-cli-eval文件夹**所在的完整绝对路径。
 
 3. 将文件夹添加到系统 PATH:
-  
+  * 在某个路径下（推荐C:\Users\YourUsername\bin）创建bin文件夹。
   * 在 Windows 搜索栏中搜索 “编辑系统环境变量” 并打开它。
   * 在弹出的窗口中，点击 “环境变量...” 按钮。
   * 在 “用户变量” 或 “系统变量” 区域中，找到并选中 Path 变量，然后点击 “编辑...”。
-  * 点击 “新建”，然后输入你刚刚创建的文件夹的路径 (例如 C:\Users\YourUsername\bin)。
+  * 点击 “新建”，然后输入创建的文件夹的路径 (例如 C:\Users\YourUsername\bin)。
   * 一路点击“确定”保存更改。
 
 4. 移动批处理文件:
